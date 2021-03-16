@@ -1,7 +1,8 @@
 
-1. install ansible and kolla-ansible using a virtual environment
-https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html
+# 1. install ansible and kolla-ansible using a virtual environment
+# https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html
 
+mkdir venv15
 sudo apt update
 sudo apt install python3-dev libffi-dev gcc libssl-dev
 sudo apt install python3-venv
@@ -9,6 +10,9 @@ python3 -m venv /root/venv15
 source /root/venv15/bin/activate
 cd venv15
 pip install -U pip
+
+# below for installation of ansible & kolla-ansible
+
 pip install ansible==2.9
 sudo pip3 install "kolla-ansible==10.2.0"
 sudo mkdir -p /etc/kolla
