@@ -1,4 +1,4 @@
-# pull & tag & push all docker images
+# pull & tag & pull all docker images
 # 1
 docker pull kolla/ubuntu-binary-kolla-toolbox:ussuri
 docker tag kolla/ubuntu-binary-kolla-toolbox:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-kolla-toolbox:ussuri
@@ -135,14 +135,11 @@ docker tag kolla/ubuntu-binary-nova-novncproxy:ussuri 20.0.0.3:4000/kolla/ubuntu
 docker push 20.0.0.3:4000/kolla/ubuntu-binary-nova-novncproxy:ussuri
 
 # 29
-docker pull kolla/ubuntu-binary-nova-placement-api:ussuri
-docker tag kolla/ubuntu-binary-nova-placement-api:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-nova-placement-api:ussuri
-docker push 20.0.0.3:4000/kolla/ubuntu-binary-nova-placement-api:ussuri
 
 # 30
-docker pull kolla/ubuntu-binary-nova-consoleauth:ussuri
-docker tag kolla/ubuntu-binary-nova-consoleauth:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-nova-consoleauth:ussuri
-docker push 20.0.0.3:4000/kolla/ubuntu-binary-nova-consoleauth:ussuri
+# docker pull kolla/ubuntu-binary-nova-consoleauth:ussuri
+# docker tag kolla/ubuntu-binary-nova-consoleauth:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-nova-consoleauth:ussuri
+# docker push 20.0.0.3:4000/kolla/ubuntu-binary-nova-consoleauth:ussuri
 
 # 31
 docker pull kolla/ubuntu-binary-ceilometer-compute:ussuri
@@ -194,15 +191,15 @@ docker pull kolla/ubuntu-binary-mongodb:ussuri
 docker tag kolla/ubuntu-binary-mongodb:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-mongodb:ussuri
 docker push 20.0.0.3:4000/kolla/ubuntu-binary-mongodb:ussuri
 
-# 41
-docker pull kolla/ubuntu-binary-ceilometer-collector:ussuri
-docker tag kolla/ubuntu-binary-ceilometer-collector:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-collector:ussuri
-docker push 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-collector:ussuri
+# 41 deleted
+# docker pull kolla/ubuntu-binary-ceilometer-collector:ussuri
+# docker tag kolla/ubuntu-binary-ceilometer-collector:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-collector:ussuri
+# docker push 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-collector:ussuri
 
-# 42
-docker pull kolla/ubuntu-binary-ceilometer-api:ussuri
-docker tag kolla/ubuntu-binary-ceilometer-api:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-api:ussuri
-docker push 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-api:ussuri
+# 42 deleted
+# docker pull kolla/ubuntu-binary-ceilometer-api:ussuri
+# docker tag kolla/ubuntu-binary-ceilometer-api:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-api:ussuri
+# docker push 20.0.0.3:4000/kolla/ubuntu-binary-ceilometer-api:ussuri
 
 # 43
 docker pull kolla/ubuntu-binary-ceilometer-central:ussuri
