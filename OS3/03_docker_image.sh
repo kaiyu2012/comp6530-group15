@@ -44,7 +44,7 @@ docker tag kolla/ubuntu-binary-memcached:ussuri 20.0.0.3:4000/kolla/ubuntu-binar
 docker push 20.0.0.3:4000/kolla/ubuntu-binary-memcached:ussuri
 # 10
 docker pull kolla/ubuntu-binary-mariadb:ussuri
-docker tag kolla/ubuntu-binary-mariadb:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-:ussuri
+docker tag kolla/ubuntu-binary-mariadb:ussuri 20.0.0.3:4000/kolla/ubuntu-binary-mariadb:ussuri
 docker push 20.0.0.3:4000/kolla/ubuntu-binary-mariadb:ussuri
 # 11
 docker pull kolla/ubuntu-binary-rabbitmq:ussuri

@@ -67,7 +67,7 @@ scp ceph.conf root@rs-mgmt:/etc/kolla/config/cinder/cinder-volume
 scp ceph.conf root@rs-mgmt:/etc/kolla/config/nova/
 
 
-
+kolla-ansible -i multinode -e ansible_python_interpreter=/root/venv15/bin/python prechecks
 # ceph auth get-or-create client.glance | ssh {your-glance-api-server} sudo tee /etc/ceph/ceph.client.glance.keyring
 # ssh {your-glance-api-server} sudo chown glance:glance /etc/ceph/ceph.client.glance.keyring
 # ceph auth get-or-create client.cinder | ssh {your-volume-server} sudo tee /etc/ceph/ceph.client.cinder.keyring
