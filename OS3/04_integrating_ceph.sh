@@ -59,6 +59,20 @@ scp ceph.client.cinder-backup.keyring root@rs-mgmt:/etc/kolla/config/cinder/cind
 scp ceph.client.cinder-volume.keyring root@rs-mgmt:/etc/kolla/config/cinder/cinder-volume
 scp ceph.client.nova.keyring root@rs-mgmt:/etc/kolla/config/nova/
 
+# 5.3 copy keyrings on to comp node
+scp /etc/kolla/config/glance/ceph.client.glance.keyring root@rs-comp:/etc/kolla/config/glance/
+scp /etc/kolla/config/cinder/ceph.client.cinder.keyring root@rs-comp:/etc/kolla/config/cinder/
+scp /etc/kolla/config/cinder/cinder-backup/ceph.client.cinder-backup.keyring root@rs-comp:/etc/kolla/config/cinder/cinder-backup
+scp /etc/kolla/config/cinder/cinder-volume/ceph.client.cinder-volume.keyring root@rs-comp:/etc/kolla/config/cinder/cinder-volume
+scp /etc/kolla/config/nova/ceph.client.nova.keyring root@rs-comp:/etc/kolla/config/nova/
+
+# 5.3 copy keyrings on to stor node
+scp /etc/kolla/config/glance/ceph.client.glance.keyring root@rs-stor:/etc/kolla/config/glance/
+scp /etc/kolla/config/cinder/ceph.client.cinder.keyring root@rs-stor:/etc/kolla/config/cinder/
+scp /etc/kolla/config/cinder/cinder-backup/ceph.client.cinder-backup.keyring root@rs-stor:/etc/kolla/config/cinder/cinder-backup
+scp /etc/kolla/config/cinder/cinder-volume/ceph.client.cinder-volume.keyring root@rs-stor:/etc/kolla/config/cinder/cinder-volume
+scp /etc/kolla/config/nova/ceph.client.nova.keyring root@rs-stor:/etc/kolla/config/nova/
+
 # 5.4 copy ceph.conf to all folders on management node
 scp ceph.conf root@rs-mgmt:/etc/kolla/config/glance/
 scp ceph.conf root@rs-mgmt:/etc/kolla/config/cinder/
